@@ -2,12 +2,12 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/title_edit"
     android:layout_width="match_parent"
+    android:id="@+id/action_noteFragment_to_addEditNoteFragment"
     android:layout_height="match_parent">
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/title_edit"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -48,7 +48,7 @@
         android:src="@drawable/ic_check"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_marginBottom="16dp"
-        app:layout_marginEnd="16dp" />
+         />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

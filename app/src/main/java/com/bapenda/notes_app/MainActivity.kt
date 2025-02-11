@@ -1,13 +1,12 @@
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity // Ubah ini
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.bapenda.notes_app.R
 import dagger.hilt.android.AndroidEntryPoint
-
 @AndroidEntryPoint
-class MainActivity : AppCompatActivity() { // Ganti ComponentActivity ke AppCompatActivity
+class MainActivity : AppCompatActivity() {
     lateinit var navController: NavController
 
     override fun onCreate(savedInstanceState: Bundle?) {

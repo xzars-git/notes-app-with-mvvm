@@ -44,7 +44,7 @@ android {
         viewBinding =true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
+        kotlinCompilerExtensionVersion = "1.5.14"
     }
     packaging {
         resources {
@@ -86,7 +86,13 @@ dependencies {
     kapt("androidx.room:room-compiler:$room_version")
     // optional - Kotlin Extensions and Coroutines support for Room
     implementation("androidx.room:room-ktx:$room_version")
+    implementation("androidx.hilt:hilt-navigation-fragment:1.0.0")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.7")
+    implementation("androidx.hilt:hilt-work:1.0.0")
+    // When using Kotlin.
+    kapt("androidx.hilt:hilt-compiler:1.0.0")
+    // When using Java.
+    annotationProcessor("androidx.hilt:hilt-compiler:1.0.0")
 }
 
 // Allow references to generated code
